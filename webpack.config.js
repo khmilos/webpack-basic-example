@@ -14,7 +14,7 @@ const pageList = (() => {
     return new HtmlWebpackPlugin({
       filename: template,
       template: `${templatePath}/${template}`,
-      chunks: [fileName, 'include'],
+      chunks: [fileName, 'index'],
       minify: true
     })
   })
